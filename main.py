@@ -63,7 +63,7 @@ def main():
             
             payment_input = str(input("How much do you want to paid : "))
 
-            payment = PaymentClass(int(payment_input), int(total))
+            payment = PaymentClass(int(float(payment_input)), int(total))
             balance = int(payment.count_balance())
 
             print("Balance : ", balance)
